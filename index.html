@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/f1eb5cf7f9.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aviv's Bootstrap Web</title>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <!-- side bar col -->
+            <nav class="col-lg-2 side-bar d-none d-lg-block p-0">
+                <div class="container sidebar-sticky mt-5">
+                    <!-- menu nav -->
+                    <h3 class="text-uppercase text-nav">Menu</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item d-flex">
+
+                            <a href="#" class="nav-link text-nav text-white w-100 d-flex nav-hover">
+                                <i class="bx bx-home-circle"></i>
+                                <span class="ml-1">Dashboard</span>
+                                <span class="badge badge-pill text-white tw-box ml-auto">3</span>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx bx-layout"></i>
+                                <span class="ml-1">Layouts</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- app nav -->
+                    <h3 class="text-uppercase text-nav pt-2">Apps</h3>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx bx-calendar"></i>
+                                <span class="ml-1">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx bx-store-alt"></i>
+                                <span class="ml-1">Ecommerce</span>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx bx-envelope"></i>
+                                <span class="ml-1">Email</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx bx-receipt"></i>
+                                <span class="ml-1">Invoices</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx  bx-briefcase-alt-2"></i>
+                                <span class="ml-1">Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx bx-task"></i>
+                                <span class="ml-1">Tasks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-nav nav-hover">
+                                <i class="bx bxs-user-detail"></i>
+                                <span class="ml-1">Contacts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <!-- content col -->
+            <div class="col-lg-10 p-0">
+
+                <!-- header nav here -->
+
+                <header>
+                    <div class="container-lg d-flex justify-content-between">
+                        <div class="text-center d-lg-none">
+                            <a href="#" class="side-bar d-flex align-items-center w-100 p-4">
+                                <img src="images/logo.svg" alt="logo" class="logo">
+                            </a>
+                        </div>
+
+                        <nav class="navbar justify-content-end justify-content-lg-between px-0 w-100">
+                            <form class="form-inline d-none d-lg-block mr-auto">
+                                <div class="form-group">
+                                    <input class="form-control mr-sm-2" type="search" placeholder=" Search..."
+                                        aria-label="Search">
+                                    <i class='bx bx-search-alt-2'></i>
+                                </div>
+
+                            </form>
+                            <ul class="nav">
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link main-nav" href="#">
+                                        <i class='bx bx-search-alt-2'></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center position-relative">
+                                    <a class="nav-link main-nav" href="#">
+                                        <i class="bx bx-bell"></i>
+                                    </a>
+                                    <span class="badge badge-pill badge-dark position-absolute">3</span>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link dropdown-toggle main-nav" href="#" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="avatar img-fluid rounded-circle img-thumbnail"
+                                            src="images/avatar.jpg" alt="profile photo">
+                                        <span class="d-none d-lg-inline text-secondary">Henry</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link main-nav pr-0" href="#">
+                                        <i class="bx bx-cog"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-2 side-bar d-flex align-items-center text-center d-lg-none">
+                            <a href="#" class="w-100">
+                                <img src="images/logo.svg" alt="logo" class="logo">
+                            </a>
+                        </div>
+                        <nav class="col-10 col-lg-12 navbar justify-content-end">
+
+                            <form class="form-inline d-none d-lg-block mr-auto">
+                                <div class="form-group">
+                                    <input class="form-control mr-sm-2" type="search" placeholder=" Search..."
+                                        aria-label="Search">
+                                    <i class='bx bx-search-alt-2'></i>
+                                </div>
+
+                            </form>
+                            <ul class="nav">
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link main-nav" href="#">
+                                        <i class='bx bx-search-alt-2'></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center position-relative">
+                                    <a class="nav-link main-nav" href="#">
+                                        <i class="bx bx-bell"></i>
+                                    </a>
+                                    <span class="badge badge-pill badge-dark position-absolute">3</span>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link dropdown-toggle main-nav" href="#" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img class="avatar img-fluid rounded-circle img-thumbnail"
+                                            src="images/avatar.jpg" alt="profile photo">
+                                        <span class="d-none d-lg-inline text-secondary">Henry</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link main-nav pr-0" href="#">
+                                        <i class="bx bx-cog"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div> -->
+
+
+                </header>
+
+
+                <!-- container of all sections starts here   -->
+                <main class="container-lg">
+
+
+                    <!-- greeting welcome row -->
+                    <div class="no-gutters my-2 d-flex justify-content-between">
+                        <h1 class="text-uppercase">Dashboard</h1>
+                        <h3>Welcome to Dashboard</h3>
+                    </div>
+
+
+                    <!-- intro section row -->
+                    <section class="row no-gutters mb-4">
+                        <!-- welcome and monthly containers (left-col) -->
+                        <div class="col-lg-5 space-container col-md-12 d-flex flex-column align-content-between mb-4">
+
+                            <div class="space">
+
+                                <!-- welcome -->
+                                <div class="welcome-container shadow-sm">
+
+                                    <div class="welcome-top rounded-top">
+                                        <div class="container">
+                                            <h1> Welcome Back! </h1>
+                                            <h3 class="text-secondary"> Skote Dashboard </h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="welcome-bottom bg-white">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-6 col-lg-8 col-md-8 col-sm-8">
+                                                    <div class="row no-gutters">
+                                                        <div class="user col-lg-6 col-md-6 col-sm-6">
+                                                            <img class="avatar img-fluid rounded-circle img-thumbnail"
+                                                                src="images/avatar.jpg" alt="profile photo">
+                                                            <h2>Henrey Price</h2>
+                                                            <h3 class="text-secondary">UI/UX Designer</h3>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                                            <span class="d-block number">125</span>
+                                                            <h3 class="text-secondary">Projects</h3>
+                                                            <a href="#"
+                                                                class="badge badge-primary font-weight-normal p-2 my-2">
+                                                                View Profile 🡒
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="col-6 col-lg-4 col-md-4 col-sm-4 align-self-center align-self-md-start bg-white">
+                                                    <span class="d-block number">$1245</span>
+                                                    <h3 class="text-secondary">Revenue</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- monthly  -->
+                                <div class="mt-4 monthly-box bg-white shadow-sm rounded">
+                                    <div class="pl-3">
+                                        <h2 class="mt-2 mb-3 pt-2">Monthly Earning</h2>
+                                        <h3 class="text-secondary">This month</h3>
+                                        <span class="number">$34,252</span>
+                                        <span class="d-block text-secondary"><span class="text-success">12% ￪</span>
+                                            From
+                                            previous period
+                                        </span>
+                                        <a href="#" class="badge badge-primary font-weight-normal p-2 my-2">
+                                            View More 🡒
+                                        </a>
+                                        <p class="text-secondary pb-3">We craft digital, graphic and dimensional
+                                            thinking.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- status and email containers (right-col) -->
+                        <div class="col-lg-7 col-md-12 d-flex flex-column">
+
+                            <!-- ==all== the status starts here -->
+                            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+
+                                <!-- Orders box starts here-->
+                                <div
+                                    class="d-flex justify-content-between justify-content-md-between py-2 bg-white  shadow-sm rounded">
+                                    <div class="container">
+                                        <h3 class="font-weight-bold text-secondary">
+                                            Orders
+                                        </h3>
+                                        <span class="d-block number">1,235</span>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="container">
+                                            <a href="#">
+                                                <i class='bx bx-copy-alt bg-primary rounded-circle progress-bar-striped p-2'
+                                                    style='color:#ffffff' undefined></i>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Revenue box here -->
+                                <div
+                                    class="d-flex justify-content-between justify-content-md-between py-2 my-4 my-md-0 bg-white shadow-sm rounded">
+                                    <div class="container">
+                                        <h3 class="font-weight-bold text-secondary mb-0">
+                                            Revenue
+                                        </h3>
+                                        <span class="d-block number">$35,723</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="container">
+                                            <a href="#">
+                                                <i class='bx bx-archive-in bg-primary rounded-circle progress-bar-striped p-2'
+                                                    style='color:#ffffff' undefined></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Average Price box here -->
+                                <div
+                                    class="d-flex justify-content-between justify-content-md-between py-2 bg-white  shadow-sm rounded">
+                                    <div class="container">
+                                        <h3 class="font-weight-bold text-secondary mb-0">
+                                            Average Price
+                                        </h3>
+                                        <span class="d-block number">$16.2</span>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="container">
+                                            <a href="#">
+                                                <i class='bx bx-purchase-tag bg-primary rounded-circle progress-bar-striped p-2'
+                                                    style='color:#ffffff' undefined></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- email box starts here -->
+                            <div class="flex-grow-1 flex-shrink-1 mt-4 shadow-sm rounded bg-white">
+                                <div class="container d-flex flex-column flex-md-row justify-content-md-between h-100">
+                                    <h2 class="my-2">Email Sent</h2>
+                                    <nav>
+                                        <ul class="nav nav-pills my-2">
+
+                                            <li class="nav-item d-flex align-items-center">
+                                                <a class="nav-link text-dark nav-hover mx-2" href="#">
+                                                    <span>Week</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item d-flex align-items-center">
+                                                <a class="nav-link text-dark nav-hover mx-2" href="#">
+                                                    <span>Month</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item d-flex align-items-center">
+                                                <a class=" nav-link active bg-primary mx-2" href="#">
+                                                    <span>Year</span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+                                    </nav>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </section>
+
+
+                    <!-- social section row -->
+                    <section class="row no-gutters flex-column flex-lg-row mb-4">
+
+                        <!-- social-box starts here-->
+                        <!-- social-top -->
+                        <div class="social-space bg-white shadow-sm rounded">
+                            <div class="container">
+                                <h2 class="my-2">Social Source</h2>
+
+                                <div class="text-center">
+                                    <i class='bx bxl-facebook bg-welcome rounded-circle p-3 mb-3 fb-box'
+                                        style='color:#556ee5' undefined></i>
+                                    <h3 class="font-weight-bold">Facebook -
+                                        <span class="text-secondary">
+                                            125 sales
+                                        </span>
+                                    </h3>
+                                    <p class="text-secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit Esse
+                                        doloribus.
+                                    </p>
+                                    <a href="#"><span class="text-primary">Learn more ></span></a>
+                                </div>
+
+                                <!-- social-buttom starts here-->
+                                <div class="d-flex justify-content-around text-center mt-3 pb-1">
+
+                                    <!-- social-facbook-box -->
+                                    <div class="social-container">
+                                        <a href="#">
+                                            <i class='bx bxl-facebook bg-primary rounded-circle p-2 fb-box'
+                                                style='color:#ffffff' undefined></i>
+                                            <h3 class="number mb-0">
+                                                Facebook
+                                            </h3>
+                                        </a>
+                                        <span class="text-secondary">125 sales</span>
+                                    </div>
+
+
+                                    <!-- social-tweeter-box -->
+                                    <div class="social-container">
+                                        <a href="#"> <i class='bx bxl-twitter rounded-circle p-2 tw-box'
+                                                style='color:#ffffff' undefined></i>
+                                            <h3 class="number mb-0">
+                                                Twitter
+                                            </h3>
+                                        </a>
+                                        <span class="text-secondary">112 sales</span>
+                                    </div>
+
+
+                                    <!-- social-Instagram-box -->
+                                    <div class="social-container">
+                                        <a href="#">
+                                            <i class='bx bx bxl-instagram rounded-circle p-2 insta-box'
+                                                style='color:#ffffff' undefined>
+                                            </i>
+                                            <h3 class="number mb-0">
+                                                Instagram
+                                            </h3>
+                                        </a>
+
+                                        <span class="text-secondary">104 sales</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- activity-box -->
+                        <div class="social-space bg-white my-4 my-lg-0 shadow-sm rounded">
+                            <div class="container">
+                                <h2 class="mt-2 mb-3">Activity</h2>
+                                <div class="row">
+                                    <div class="dashed-i col-2 d-flex mt-1">
+                                        <i class='bx bx-right-arrow-circle' style='color:#767b81'></i>
+                                    </div>
+                                    <div class="col-3 p-0">
+                                        <span class="number">
+                                            22 Nov <span class="text-primary">🡒</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-7 p-0">
+                                        <p class="px-1">
+                                            Responded to need "Volunteer Activities"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="dashed-i col-2 d-flex mt-1">
+                                        <i class='bx bx-right-arrow-circle' style='color:#767b81'></i>
+                                    </div>
+                                    <div class="col-3 p-0">
+                                        <span class="number">
+                                            17 Nov <span class="text-primary">🡒</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-7 p-0">
+                                        <p class="px-1">
+                                            Everyone realizes why a new common language would be desirable... <a
+                                                class="text-primary" href="#">Read more</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="dashed-i col-2  d-flex mt-1">
+                                        <i class='bx bxs-right-arrow-circle' style='color:#556ee5'></i>
+                                    </div>
+                                    <div class="col-3  p-0">
+                                        <span class="number">
+                                            15 Nov <span class="text-primary">🡒</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-7 p-0">
+                                        <p class="px-1">
+                                            Join the group "Boardsmanship Forum"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="dashed-i col-2 d-flex mt-1">
+                                        <i class='bx bx-right-arrow-circle' style='color:#767b81'></i>
+                                    </div>
+                                    <div class="col-3 p-0">
+                                        <span class="number">
+                                            12 Nov <span class="text-primary">🡒</span>
+                                        </span>
+                                    </div>
+                                    <div class="col-7 p-0">
+                                        <p class="px-1">
+                                            Responded to need "In-Kind Opportunity"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <a href="#" class="badge badge-primary font-weight-normal p-2 my-2">
+                                        View More 🡒
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- top-cities-box -->
+                        <div class="social-space bg-white shadow-sm rounded">
+                            <div class="container">
+                                <h2 class="my-2">
+                                    Top Cities Selling Products
+                                </h2>
+                                <div class="col-12 text-center pb-2">
+                                    <i class='bx bx-map-pin py-2' style='color:#556ee5;font-size:40px;'></i>
+                                    <span class="d-block number">1,456</span>
+                                    <span class="d-block text-secondary">San Francisco</span>
+                                </div>
+                                <div class="container">
+                                    <div class="row border-top py-2">
+                                        <div class="col-4 d-flex align-items-center p-0">
+                                            <h3 class="m-0">San Francisco</h3>
+                                        </div>
+                                        <div class="col-3 text-center p-0">
+                                            <span class="number">1,123</span>
+                                        </div>
+                                        <div class="col-5 p-0 align-self-center">
+                                            <div class="progress" style="height: 5px;">
+                                                <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 80%;" aria-valuenow="25" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border-top py-2">
+                                        <div class="col-4  d-flex align-items-center p-0">
+                                            <h3 class="m-0">Los Angeles</h3>
+                                        </div>
+                                        <div class="col-3 text-center p-0">
+                                            <span class="number">1,026</span>
+                                        </div>
+                                        <div class="col-5 p-0 align-self-center">
+                                            <div class="progress" style="height: 5px;">
+                                                <div class="progress-bar bg-success" role="progressbar"
+                                                    style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row border-top pt-2 pt-2 pb-4">
+                                        <div class="col-4 d-flex align-items-center p-0">
+                                            <h3 class="m-0">San Diego</h3>
+                                        </div>
+                                        <div class="col-3 text-center p-0">
+                                            <span class="number">1,456</span>
+                                        </div>
+                                        <div class="col-5 p-0 align-self-center">
+                                            <div class="progress" style="height: 5px;">
+                                                <div class="progress-bar bg-warning" role="progressbar"
+                                                    style="width: 50%;" aria-valuenow="25" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+
+                    <!-- transaction (last-section) section row -->
+                    <section class="row no-gutters mb-4 bg-white shadow-sm rounded">
+                        <div class="col-lg-12">
+                            <div class="container">
+                                <h2 class="mt-2 mb-4">Latest Transaction</h2>
+                                <table class="table table-sm">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">
+                                                <div>
+                                                    <input class="form-check-input m-0" type="checkbox" name="user1"
+                                                        value="select">
+                                                </div>
+                                            </th>
+                                            <th scope="col">Order ID</th>
+                                            <th scope="col">Billing Name</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Total</th>
+                                            <th scope="col" class="d-none d-md-table-cell"> Payment Status
+                                            </th>
+                                            <th scope="col" class="d-none d-md-table-cell">Payment Method</th>
+                                            <th scope="col" class="d-none d-md-table-cell">View Details</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <!-- new table row starts here! -->
+                                        <tr>
+                                            <th>
+                                                <input class="form-check-input m-0" type="checkbox" name="user1"
+                                                    value="select">
+                                            </th>
+                                            <td class="font-weight-bold">#SK2540</td>
+                                            <td>Neal Matthews</td>
+                                            <td>07 Oct, 2019</td>
+                                            <td>$400</td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#">
+                                                    <span class="badge badge-pill badge-success p-1">Paid</span>
+                                                </a>
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <i class="fab fa-cc-mastercard"></i> Mastercard
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#" class="badge badge-pill badge-primary p-2">View
+                                                    Details</a>
+                                            </td>
+                                        </tr>
+
+                                        <!-- new table row starts here! -->
+                                        <tr>
+                                            <th>
+                                                <input class="form-check-input m-0" type="checkbox" name="user1"
+                                                    value="select">
+                                            </th>
+                                            <td class="font-weight-bold">#SK2541</td>
+                                            <td>Jamal Burnett</td>
+                                            <td>07 Oct, 2019</td>
+                                            <td>$380</td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#">
+                                                    <span class="badge badge-pill badge-danger p-1">Chargeback</span>
+                                                </a>
+
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <i class="fab fa-cc-visa"></i> Visa
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#" class="badge badge-pill badge-primary p-2">View
+                                                    Details</a>
+                                            </td>
+                                        </tr>
+
+                                        <!-- new table row starts here! -->
+                                        <tr>
+                                            <th>
+                                                <input class="form-check-input m-0" type="checkbox" name="user1"
+                                                    value="select">
+                                            </th>
+                                            <td class="font-weight-bold">#SK2542</td>
+                                            <td>Juan Mitchell</td>
+                                            <td>06 Oct, 2019</td>
+                                            <td>$384</td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#">
+                                                    <span class="badge badge-pill badge-success p-1">Paid</span>
+                                                </a>
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+
+                                                <i class="fab fa-cc-paypal"></i> Paypal
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#" class="badge badge-pill badge-primary p-2">View
+                                                    Details</a>
+                                            </td>
+                                        </tr>
+
+                                        <!-- new table row starts here! -->
+                                        <tr>
+                                            <th>
+                                                <input class="form-check-input m-0" type="checkbox" name="user1"
+                                                    value="select">
+                                            </th>
+                                            <td class="font-weight-bold">#SK2543</td>
+                                            <td>Barry Dick</td>
+                                            <td>05 Oct, 2019</td>
+                                            <td>$412</td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#">
+                                                    <span class="badge badge-pill badge-success p-1">Paid</span>
+                                                </a>
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <i class="fab fa-cc-mastercard"></i> Mastercard
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#" class="badge badge-pill badge-primary p-2">View
+                                                    Details</a>
+                                            </td>
+                                        </tr>
+
+                                        <!-- new table row starts here! -->
+                                        <tr>
+                                            <th>
+                                                <input class="form-check-input m-0" type="checkbox" name="user1"
+                                                    value="select">
+                                            </th>
+                                            <td class="font-weight-bold">#SK2544</td>
+                                            <td>Ronald Taylor</td>
+                                            <td>04 Oct, 2019</td>
+                                            <td>$404</td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#">
+                                                    <span class="badge badge-pill badge-warning p-1">Refund</span>
+                                                </a>
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <i class="fab fa-cc-visa"></i> Visa
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#" class="badge badge-pill badge-primary p-2">View
+                                                    Details</a>
+                                            </td>
+                                        </tr>
+
+                                        <!-- new table row starts here! -->
+                                        <tr>
+                                            <th>
+                                                <input class="form-check-input m-0" type="checkbox" name="user1"
+                                                    value="select">
+                                            </th>
+                                            <td class="font-weight-bold">#SK2545</td>
+                                            <td>Jacob Hunter</td>
+                                            <td>04 Oct, 2019</td>
+                                            <td>$392</td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#">
+                                                    <span class="badge badge-pill badge-success p-1">Paid</span>
+                                                </a>
+
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <i class="fab fa-cc-paypal"></i> Paypal
+                                            </td>
+                                            <td class="d-none d-md-table-cell">
+                                                <a href="#" class="badge badge-pill badge-primary p-2">View
+                                                    Details</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+
+                </main>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
